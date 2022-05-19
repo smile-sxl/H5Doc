@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.xiaoai.h5doc",
+    "module": "h5doc",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "h5doc-1.0.0.jar",
+          "url": "h5doc-1.0.0.jar",
+          "size": 5728,
+          "sha512": "82f024b10fbbf2420280cb9e3d79a5f0b138466ea6062f0b93e4ce21ec7676f09fb8aafa8b1dd179063eb060b8c1a91e8b13a8e1f3f32e6d6bf453faf51cd08b",
+          "sha256": "35c9290acaca7c62bcf6ec4e0a739d0bec117599fa01701715e683887449adb3",
+          "sha1": "8a32b1da5581f77a1fb7de5d65e9a21c4509ebf5",
+          "md5": "9a85ab2f5fec8cbf39f0533c5cc0d55c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.alibaba",
+          "module": "fastjson",
+          "version": {
+            "requires": "1.2.69"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "h5doc-1.0.0.jar",
+          "url": "h5doc-1.0.0.jar",
+          "size": 5728,
+          "sha512": "82f024b10fbbf2420280cb9e3d79a5f0b138466ea6062f0b93e4ce21ec7676f09fb8aafa8b1dd179063eb060b8c1a91e8b13a8e1f3f32e6d6bf453faf51cd08b",
+          "sha256": "35c9290acaca7c62bcf6ec4e0a739d0bec117599fa01701715e683887449adb3",
+          "sha1": "8a32b1da5581f77a1fb7de5d65e9a21c4509ebf5",
+          "md5": "9a85ab2f5fec8cbf39f0533c5cc0d55c"
+        }
+      ]
+    }
+  ]
+}

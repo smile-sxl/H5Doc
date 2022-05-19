@@ -1,0 +1,40 @@
+apply plugin: 'groovy'
+apply plugin: 'java-gradle-plugin'
+apply plugin: 'maven-publish'
+
+//Gradle 配置的方式注册插件
+gradlePlugin {
+    plugins {
+        greeting {
+            // 插件id
+            id = 'MainH5Doc'
+            // 插件实现类
+            implementationClass = 'com.xiaoai.h5doc.MainH5Doc'
+        }
+    }
+}
+
+
+dependencies {
+    //gradle sdk
+    implementation gradleApi()
+    //groovy sdk
+    implementation localGroovy()
+    implementation 'com.alibaba:fastjson:1.2.69'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+//将插件打包上传到本地maven仓库
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.xiaoai'
+                artifactId = 'h5doc'
+                version = '1.0.0'
+            }
+        }
+    }
+}
+
